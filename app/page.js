@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState, useEffect } from 'react';
 
 const Main = () => {
@@ -55,11 +55,14 @@ const Main = () => {
       <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg max-w-md w-full text-center border-2 border-pink-300 relative">
         {/* GIF positioned above the question */}
         <div className="flex justify-center mb-4">
-          <img
+          <Image
             src="/images/ask.gif"
             alt="Ask GIF"
+            width={160} // Adjust as needed
+            height={160} // Adjust as needed
             className="w-20 h-20 sm:w-40 sm:h-40"
           />
+
         </div>
 
         <h2 className="text-2xl font-bold text-pink-600">Would you like to go on a date with me today?</h2>
@@ -87,9 +90,11 @@ const Main = () => {
             <div className="bg-white p-6 rounded-2xl shadow-lg text-center border-2 border-pink-300 w-full max-w-sm mx-4">
               {/* GIF positioned above the text */}
               <div className="flex justify-center">
-                <img
+                <Image
                   src="/images/pliss.gif"
                   alt="Please GIF"
+                  width={160}
+                  height={160} 
                   className="w-20 h-20 sm:w-24 sm:h-24 mb-4 bg-transparent"
                 />
               </div>
@@ -118,9 +123,11 @@ const Main = () => {
             <div className="bg-white p-6 rounded-2xl shadow-lg text-center border-2 border-pink-300 w-full max-w-sm mx-4">
               {/* GIF for "Yes" success pop-up */}
               <div className="flex justify-center">
-                <img
+                <Image
                   src="/images/yes.gif"
                   alt="Yes GIF"
+                  width={160} // Adjust as needed
+                  height={160} 
                   className="w-20 h-20 sm:w-24 sm:h-24 mb-4 bg-transparent"
                 />
               </div>
@@ -144,9 +151,11 @@ const Main = () => {
             <div className="bg-white p-6 rounded-2xl shadow-lg text-center border-2 border-pink-300 w-full max-w-sm mx-4">
               {/* GIF for "No" pop-up */}
               <div className="flex justify-center">
-                <img
+                <Image
                   src="/images/no.gif"
                   alt="No GIF"
+                  width={160} // Adjust as needed
+                  height={160} 
                   className="w-20 h-20 sm:w-24 sm:h-24 mb-4 bg-transparent"
                 />
               </div>
